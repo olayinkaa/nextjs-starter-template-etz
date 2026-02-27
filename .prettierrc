@@ -1,0 +1,28 @@
+{
+    "trailingComma": "es5",
+    "tabWidth": 4,
+    "printWidth": 90,
+    "semi": true,
+    "singleQuote": false,
+    "bracketSpacing": true,
+    "plugins": [
+        "@ianvs/prettier-plugin-sort-imports",
+        "prettier-plugin-tailwindcss"
+    ],
+    "importOrder": [
+        "^(react/(.*)$)|^(react$)",
+        "<THIRD_PARTY_MODULES>",
+        "^types$",
+        "^@/env(.*)$",
+        "^@/types/(.*)$",
+        "^@/config/(.*)$",
+        "^@/assets/(.*)$",
+        "^@/lib/(.*)$",
+        "^@/hooks/(.*)$",
+        "^@/components/ui/(.*)$",
+        "^@/components/(.*)$",
+        "^@/styles/(.*)$",
+        "^@/app/(.*)$",
+        "^[./]"
+    ]
+}
