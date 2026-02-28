@@ -1,12 +1,13 @@
-;
 // const path = require("path");
-import path from 'node:path';
+import path from "node:path";
 
 const buildEslintCommand = (filenames) =>
     `eslint --fix ${filenames
         .map((f) => `"${path.relative(process.cwd(), f)}"`)
         .join(" ")}`;
 
-module.exports = {
+const config = {
     "*.{js,jsx,ts,tsx}": [buildEslintCommand],
 };
+
+export default config;
