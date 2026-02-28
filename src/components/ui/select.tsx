@@ -1,10 +1,10 @@
 "use client"
 
-import * as React from "react"
+import { RiArrowDownSLine, RiArrowUpSLine,RiCheckLine } from "@remixicon/react"
 import { Select as SelectPrimitive } from "radix-ui"
+import * as React from "react"
 
 import { cn } from "@/lib/utils"
-import { RiArrowDownSLine, RiCheckLine, RiArrowUpSLine } from "@remixicon/react"
 
 function Select({
   ...props

@@ -1,11 +1,13 @@
 import nextVitals from "eslint-config-next/core-web-vitals";
 import nextTs from "eslint-config-next/typescript";
+import prettier from "eslint-config-prettier/flat";
+import simpleImportSort from "eslint-plugin-simple-import-sort";
 import { defineConfig, globalIgnores } from "eslint/config";
-
 
 const eslintConfig = defineConfig([
     ...nextVitals,
     ...nextTs,
+    prettier,
     // Override default ignores of eslint-config-next.
     globalIgnores([
         // Default ignores of eslint-config-next:
@@ -18,6 +20,12 @@ const eslintConfig = defineConfig([
         rules: {
             // Custom rules can be added here.
             "@typescript-eslint/no-explicit-any": "off",
+            "simple-import-sort/imports": "off",
+            "simple-import-sort/exports": "off",
+            "import/no-duplicates": "error",
+        },
+        plugins: {
+            "simple-import-sort": simpleImportSort,
         },
     },
 ]);

@@ -5,10 +5,7 @@
     "semi": true,
     "singleQuote": false,
     "bracketSpacing": true,
-    "plugins": [
-        "@ianvs/prettier-plugin-sort-imports",
-        "prettier-plugin-tailwindcss"
-    ],
+    "plugins": ["prettier-plugin-tailwindcss"],
     "importOrder": [
         "^(react/(.*)$)|^(react$)",
         "<THIRD_PARTY_MODULES>",
@@ -24,5 +21,6 @@
         "^@/styles/(.*)$",
         "^@/app/(.*)$",
         "^[./]"
-    ]
+    ],
+    "tailwindFunctions": ["cn", "clsx", "twMerge"]
 }
