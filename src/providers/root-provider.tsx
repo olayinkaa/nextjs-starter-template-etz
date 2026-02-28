@@ -1,5 +1,6 @@
 import { ChildrenProps } from "@/types/base";
+import ReactQueryProviders from "./react-query-provider";
 
 export default function RootProvider({ children }: ChildrenProps) {
-    return <>{children}</>;
+    return <ReactQueryProviders>{children}</ReactQueryProviders>;
 }

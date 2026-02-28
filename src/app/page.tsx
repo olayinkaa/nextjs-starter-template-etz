@@ -1,4 +1,4 @@
-import Image from "next/image";
+// import Image from "next/image";
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader } from "@/components/ui/card";
@@ -10,13 +10,13 @@ export default function Page() {
         <div className="relative min-h-screen w-full overflow-hidden">
             {/* Background Image */}
             <div className="absolute inset-0">
-                <Image
+                {/* <Image
                     src="/images/login-bg.jpg"
                     alt="Background"
                     fill
                     priority
                     className="object-cover"
-                />
+                /> */}
                 <div className="absolute inset-0 bg-black/60 backdrop-blur-sm" />
             </div>
 
