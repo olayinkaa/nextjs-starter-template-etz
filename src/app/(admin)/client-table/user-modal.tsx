@@ -1,4 +1,5 @@
 "use client";
+
 import { Modal } from "@/components/shared/modal";
 import useAppStore from "@/stores/app-store";
 import { EntityType } from "@/types/enum";
@@ -19,6 +20,7 @@ export default function UserModal() {
             onClose={handleClose}
             backdrop={false}
             size="xl"
+            overlay="medium"
         >
             <Modal.Header>
                 <div>

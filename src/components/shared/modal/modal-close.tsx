@@ -1,14 +1,32 @@
 "use client";
 
-import { CircleX } from "lucide-react";
+import { CircleX, LucideIcon } from "lucide-react";
 import { useModal } from "./modal-context";
+import { cn } from "@/lib/utils";
+import { Slot } from "radix-ui";
 
-export function ModalClose({ className }: { className?: string }) {
+interface ModalCloseProps {
+    className?: string;
+    icon?: LucideIcon;
+    asChild?: boolean;
+}
+
+export function ModalClose({
+    className,
+    icon: IconComponent,
+    asChild = false,
+}: ModalCloseProps) {
     const { onClose } = useModal();
 
+    const Comp = asChild ? Slot.Root : "button";
+    const Icon = IconComponent ?? CircleX;
+
     return (
-        <button type="button" onClick={onClose} className={className}>
-            <CircleX size={24} />
-        </button>
+        <Comp
+            onClick={onClose}
+            className={cn("inline-flex items-center justify-center", className)}
+        >
+            <Icon size={24} />
+        </Comp>
     );
 }

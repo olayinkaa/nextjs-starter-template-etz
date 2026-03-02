@@ -64,7 +64,6 @@ export function ModalRoot({
                             modalVariants.overlay[overlay]
                         )}
                     />
-
                     {/* Wrapper */}
                     <div
                         className={cn(
