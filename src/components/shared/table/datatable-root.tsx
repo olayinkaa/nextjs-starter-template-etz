@@ -102,7 +102,7 @@ export default function DataTableRoot<TData, TValue>(
     }, [remote, globalFilter, pagination?.pageSize, table]);
 
     return (
-        <DataTableContext.Provider
+        <DataTableContext
             value={{
                 table,
                 isLoading,
@@ -115,6 +115,6 @@ export default function DataTableRoot<TData, TValue>(
             }}
         >
             <div className="rounded-lg border">{children}</div>
-        </DataTableContext.Provider>
+        </DataTableContext>
     );
 }
