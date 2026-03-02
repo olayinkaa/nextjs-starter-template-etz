@@ -1,5 +1,5 @@
 import RootProvider from "@/providers/root-provider";
-import "./globals.css";
+import "../assets/styles/globals.css";
 
 import type { Metadata, Viewport } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
