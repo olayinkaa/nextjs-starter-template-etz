@@ -1,6 +1,6 @@
 "use client";
 
-import { createContext, useContext } from "react";
+import { createContext, use } from "react";
 import { Table } from "@tanstack/react-table";
 
 export interface DataTableContextType<TData> {
@@ -17,7 +17,7 @@ export interface DataTableContextType<TData> {
 const DataTableContext = createContext<DataTableContextType<any> | null>(null);
 
 export function useDataTable<TData>() {
-    const ctx = useContext(DataTableContext);
+    const ctx = use(DataTableContext);
     if (!ctx) {
         throw new Error("useDataTable must be used inside DataTable");
     }

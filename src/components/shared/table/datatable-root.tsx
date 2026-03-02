@@ -61,13 +61,13 @@ export default function DataTableRoot<TData, TValue>({
                 sorting,
             }),
         },
-
-        initialState: {
-            pagination: {
-                pageSize,
+        ...(!remote && {
+            initialState: {
+                pagination: {
+                    pageSize,
+                },
             },
-        },
-
+        }),
         enableRowSelection,
         /** Change handlers */
         onSortingChange: setSorting,

@@ -2,10 +2,14 @@
 
 import Container from "@/components/shared/container";
 import { DataTable } from "@/components/shared/table";
+import { Button } from "@/components/ui/button";
+import useAppStore from "@/stores/app-store";
+import { EntityType } from "@/types/enum";
 import { ColumnDef } from "@tanstack/react-table";
 import { use, useMemo, useState } from "react";
 
 export default function UserTable({ promise }: { promise: Promise<any[]> }) {
+    const handleOpen = useAppStore((state) => state.handleOpen);
     const [globalFilter, setGlobalFilter] = useState("");
     const data = use(promise);
 
@@ -57,7 +61,12 @@ export default function UserTable({ promise }: { promise: Promise<any[]> }) {
                             debounce={1000}
                             wrapperClassName="w-3/4 xl:w-1/3"
                         />
-                        <DataTable.ColumnFilter />
+                        <section className="flex items-center gap-3">
+                            <Button onClick={() => handleOpen(EntityType.USER_CREATED)}>
+                                Create User
+                            </Button>
+                            <DataTable.ColumnFilter />
+                        </section>
                     </DataTable.Header>
                     <DataTable.Content />
                     <DataTable.Footer>
