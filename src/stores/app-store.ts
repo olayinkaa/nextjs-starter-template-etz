@@ -13,7 +13,6 @@ type TAction = {
     handleOpen: (entity: EntityType) => void;
     handleClose: () => void;
     handleEdit: ({ data, entity }: { data: any; entity: EntityType }) => void;
-    handleRefreshData: ({ data }: { data: any }) => void;
 };
 
 const initialState: TState = {
@@ -45,15 +44,7 @@ const useAppStore = create<TState & TAction>()(
                 state.formData = data;
                 state.entity = entity;
             });
-        },
-        handleRefreshData: ({ data }: any) => {
-            set((state) => {
-                return {
-                    ...state,
-                    formData: data, //
-                };
-            });
-        },
+        }
     }))
 );
 
