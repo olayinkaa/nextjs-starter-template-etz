@@ -17,37 +17,33 @@ type DataTableRootProps<TData, TValue> =
     | DataTableRemoteProps<TData, TValue>
     | DataTableClientProps<TData, TValue>;
 
-export default function DataTableRoot<TData, TValue>(
-    props: DataTableRootProps<TData, TValue>
-) {
-    const {
-        columns,
-        data,
-        remote = false,
-        totalRecords,
-        pageSizeOptions = [10, 20, 50],
-        isLoading = false,
-        globalFilter,
-        pagination,
-        pageCount,
-        pageSize,
-        columnVisibility,
-        setColumnVisibility,
-        rowSelection,
-        setRowSelection,
-        selectionKey = "id" as keyof TData,
-        enableRowSelection = true,
-        columnFilters,
-        setColumnFilters,
-        setGlobalFilter,
-        setPagination,
-        enableVirtualization = false,
-        estimatedRowHeight = 53,
-        tableHeight = "600px",
-        onRowClick,
-        children,
-    } = props;
-
+export default function DataTableRoot<TData, TValue>({
+    columns,
+    data,
+    remote = false,
+    totalRecords,
+    pageSizeOptions = [10, 20, 50],
+    isLoading = false,
+    globalFilter,
+    pagination,
+    pageCount,
+    pageSize,
+    columnVisibility,
+    setColumnVisibility,
+    rowSelection,
+    setRowSelection,
+    selectionKey = "id" as keyof TData,
+    enableRowSelection = true,
+    columnFilters,
+    setColumnFilters,
+    setGlobalFilter,
+    setPagination,
+    enableVirtualization = false,
+    estimatedRowHeight = 53,
+    tableHeight = "600px",
+    onRowClick,
+    children,
+}: DataTableRootProps<TData, TValue>) {
     const [sorting, setSorting] = useState<SortingState>([]);
 
     const table = useReactTable({
