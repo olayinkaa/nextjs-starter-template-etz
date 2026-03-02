@@ -95,11 +95,11 @@ export default function DataTableRoot<TData, TValue>(
     });
 
     /** Reset page when filter changes (remote only) */
-    // useEffect(() => {
-    //     if (remote) {
-    //         table.resetPageIndex(true);
-    //     }
-    // }, [remote, globalFilter, pagination?.pageSize, table]);
+    useEffect(() => {
+        if (remote) {
+            table.resetPageIndex(true);
+        }
+    }, [remote, globalFilter, pagination?.pageSize, table]);
 
     return (
         <DataTableContext.Provider
