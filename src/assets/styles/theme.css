@@ -1,0 +1,51 @@
+:root {
+    --page-width: 1380px;
+}
+
+@theme {
+    --color-primary: #0765FF;
+    --color-primary-100: #DEE9FF;
+    --color-danger: #E7000B;
+    --color-danger-200: #DC3C3F;
+    --color-danger-100: #FFC9C9;
+    --color-danger-600: #82181A;
+    --color-success: #039836;
+    --color-secondary: #475467;
+    /*  */
+    --color-slate: #F2F4F7;
+    --color-slate-100: #f2f4f7;
+    --color-slate-50: #f7f7f7;
+    --color-slate-200: #fafafa;
+    --color-slate-300: #d0d5dd;
+    --color-slate-400: #98a2b3;
+    --color-slate-800: #838383;
+    --color-slate-900: #7d7d7d;
+
+    --text-h5: 16px;
+    --text-h5--line-height: 100%;
+    --text-h5--letter-spacing: -5%;
+
+    --text-h4: 20px;
+    --text-h4--line-height: 100%;
+    --text-h4--letter-spacing: -2%;
+
+    --text-h4b: 20px;
+    --text-h4b--line-height: 30px;
+    --text-h4b--letter-spacing: -1%;
+
+    --text-h3: 32px;
+    --text-h3--line-height: 38px;
+    --text-h3--letter-spacing: -0.01;
+
+    --text-pmd: 14px;
+    --text-pmd--line-height: 21px;
+    --text-pmd--letter-spacing: -0.01;
+
+    --text-psm: 13px;
+    --text-psm--line-height: 19.5px;
+    --text-psm--letter-spacing: -0.01 /* Border radius */ --radius--fe-xxs: 8px;
+    --radius-fe-xs: 10px;
+    --radius-fe-sm: 12px;
+
+    --shadow-custom-inset: 0px -3px 6px 0px #0000001f inset;
+}

@@ -3,7 +3,7 @@ import { Suspense } from "react";
 import UserTable from "./user-table";
 
 const fetchUsers = async () => {
-    const res = await fetch("http://localhost:3025/api/users");
+    const res = await fetch("http://localhost:2000/api/users");
     if (!res.ok) throw new Error("Failed to fetch users");
     return res.json();
 };

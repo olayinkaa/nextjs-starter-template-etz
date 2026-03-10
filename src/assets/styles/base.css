@@ -11,4 +11,37 @@
     [role="button"]:not(:disabled) {
         cursor: pointer;
      }
+
+    input[type="text"],
+    input[type="email"],
+    input[type="password"],
+    input[type="number"],
+    input[type="date"],
+    input[type="tel"],
+    /* textarea, */
+    select {
+        @apply border-border bg-background text-foreground read-only:bg-muted disabled:text-muted-foreground block w-full rounded-lg border-[1.5px] py-2 pl-2 shadow-xs outline-none focus:border focus:border-blue-400 focus:ring-0 focus:ring-blue-200 disabled:cursor-not-allowed disabled:bg-gray-300;
+    }
+
+    div textarea {
+        @apply border-border bg-background text-foreground read-only:bg-muted disabled:bg-secondary disabled:text-muted-foreground block w-full rounded-lg border shadow-xs outline-none focus:border-none focus:border-blue-400 focus:ring-0 focus:ring-blue-200 disabled:cursor-not-allowed;
+    }
+
+    input[type="number"]::-webkit-inner-spin-button,
+    input[type="number"]::-webkit-outer-spin-button {
+        -webkit-appearance: none;
+        margin: 0;
+    }
+
+    input[type="checkbox"] {
+        @apply h-5 w-5 rounded text-blue-500 hover:cursor-pointer focus:ring-0;
+    }
+
+    .input-label {
+        @apply text-pmd text-slate-700 mb-1 flex md:text-base;
+    }
+
+    .input-control {
+        @apply h-10.25;
+    }
 }

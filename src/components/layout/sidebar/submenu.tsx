@@ -31,7 +31,7 @@ export default function Submenu({ item }: { item: MenuList }) {
                         className="h-11 cursor-pointer"
                         tooltip={item.title}
                     >
-                        {Icon && <Icon className="text-grey-500 size-4.5!" />}
+                        {Icon && <Icon className="text-slate-500 size-4.5!" />}
 
                         <h4 className="font-medium text-gray-500">{item.title}</h4>
                         <ChevronRight className="ml-auto transition-transform duration-200 group-data-[state=open]/collapsible:rotate-90" />

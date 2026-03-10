@@ -7,7 +7,7 @@ import {
     SidebarHeader,
     SidebarMenu,
     SidebarMenuItem,
-    SidebarRail,
+    // SidebarRail,
 } from "@/components/ui/sidebar";
 import NavDasboard from "./nav-dashboard";
 import { NavItems } from "./nav-items";
@@ -19,7 +19,7 @@ import NavMain from "./nav-main";
 
 export default function AppSidebar({ ...props }: React.ComponentProps<typeof Sidebar>) {
     return (
-        <Sidebar className="shadow-xs" variant="sidebar" {...props}>
+        <Sidebar className="shadow-xs" variant="floating" {...props}>
             <SidebarHeader className="pl-4">
                 <SidebarMenu>
                     <SidebarMenuItem className="mt-5 h-6 w-25.75">
@@ -35,7 +35,7 @@ export default function AppSidebar({ ...props }: React.ComponentProps<typeof Sid
             <SidebarFooter>
                 <NavUser />
             </SidebarFooter>
-            <SidebarRail />
+            {/* <SidebarRail /> */}
         </Sidebar>
     );
 }

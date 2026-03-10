@@ -11,7 +11,7 @@ import Submenu from "./submenu";
 export default function NavMain({ items }: { items: MenuList[] }) {
     return (
         <SidebarGroup className="p-0">
-            <SidebarGroupLabel className="text-grey-400 ml-1 rounded-none text-sm uppercase">
+            <SidebarGroupLabel className="text-slate-400 ml-1 rounded-none text-sm uppercase">
                 Your business
             </SidebarGroupLabel>
             <SidebarGroupContent>

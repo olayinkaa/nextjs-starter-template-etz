@@ -40,7 +40,7 @@ export default function TextField(props: InputProps) {
 
     const baseClass = cn(
         `input-control`,
-        "placeholder:text-sm placeholder:text-gray-400 placeholder:font-light",
+        "placeholder:text-sm placeholder:font-light placeholder:text-gray-400",
         icon && iconPosition === "left" && "pl-9",
         icon && iconPosition === "right" && "pr-9",
         isTouched && hasError && errorStyle,
@@ -111,7 +111,7 @@ export function TextField2(props: InputProps) {
 
     const baseClass = cn(
         `input-control`,
-        "placeholder:text-sm placeholder:text-gray-400 placeholder:font-light",
+        "placeholder:text-sm placeholder:font-light placeholder:text-gray-400",
         icon && iconPosition === "left" && "pl-9",
         icon && iconPosition === "right" && "pr-9",
         isTouched && hasError && errorStyle,

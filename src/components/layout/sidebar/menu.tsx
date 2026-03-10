@@ -15,7 +15,7 @@ export default function Menu({ item }: { item: MenuList }) {
     return (
         <SidebarMenuItem key={item.title}>
             <SidebarMenuButton
-                className="hover:bg-grey-300/30 h-10 rounded-none px-3"
+                className="hover:bg-slate-300/30 h-10 rounded-none px-3"
                 asChild
                 size="sm"
             >
@@ -27,7 +27,7 @@ export default function Menu({ item }: { item: MenuList }) {
                 >
                     {Icon && (
                         <Icon
-                            className={cn("text-grey size-4.5!", {
+                            className={cn("text-slate size-4.5!", {
                                 "text-primary-400": isActiveMenu,
                             })}
                         />
