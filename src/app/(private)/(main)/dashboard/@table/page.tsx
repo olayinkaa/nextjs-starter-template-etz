@@ -1,17 +1,26 @@
 "use client";
 
-import Container from "@/components/shared/container";
 import { DataTable } from "@/components/shared/table";
 import { Button } from "@/components/ui/button";
 import useAppStore from "@/stores/app-store";
 import { EntityType } from "@/types/enum";
 import { ColumnDef } from "@tanstack/react-table";
-import { use, useMemo, useState } from "react";
+import { useEffect, useMemo, useState } from "react";
 
-export default function UserTable({ promise }: { promise: Promise<any[]> }) {
+export default function DashboardTable() {
     const handleOpen = useAppStore((state) => state.handleOpen);
     const [globalFilter, setGlobalFilter] = useState("");
-    const data = use(promise);
+    const [data, setData] = useState([]);
+    const [, setLoading] = useState(true);
+
+    useEffect(() => {
+        fetch("/api/users")
+            .then((res) => res.json())
+            .then((data) => {
+                setData(data);
+                setLoading(false);
+            });
+    }, []);
 
     const columns = useMemo<ColumnDef<any>[]>(
         () => [
@@ -43,7 +52,7 @@ export default function UserTable({ promise }: { promise: Promise<any[]> }) {
         []
     );
     return (
-        <Container className="my-10">
+        <div className="my-10">
             <DataTable
                 columns={columns}
                 data={data}
@@ -62,7 +71,7 @@ export default function UserTable({ promise }: { promise: Promise<any[]> }) {
                             wrapperClassName="w-3/4 xl:w-1/3"
                         />
                         <section className="flex items-center gap-3">
-                            <Button onClick={() => handleOpen(EntityType.USER_CREATED)}>
+                            <Button className="hidden" onClick={() => handleOpen(EntityType.USER_CREATED)}>
                                 Create User
                             </Button>
                             <DataTable.ColumnFilter />
@@ -74,6 +83,6 @@ export default function UserTable({ promise }: { promise: Promise<any[]> }) {
                     </DataTable.Footer>
                 </div>
             </DataTable>
-        </Container>
+        </div>
     );
 }

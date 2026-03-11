@@ -1,6 +1,6 @@
 import { Fragment } from "react";
 import { ChildrenProps } from "@/types/base";
-import UserModal from "@/app/(admin)/client-table/user-modal";
+import UserModal from "@/app/(private)/(main)/dashboard/user-modal";
 
 export default function AppDialogsProvider({ children }: ChildrenProps) {
     return (

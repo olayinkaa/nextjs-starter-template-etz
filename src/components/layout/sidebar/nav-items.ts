@@ -15,29 +15,30 @@ export type TNavItem = {
 };
 
 export const NavItems = {
-    dashboard: [
+    main: [
         {
             title: "Dashboard",
             path: "/dashboard",
             iconKey: "dashboard",
         },
-    ],
-    main: [
         {
-            title: "Product",
-            path: "/product",
-            iconKey: "box",
+            title: "Bulk upload",
+            path: "/bulk-upload",
+            iconKey: "upload",
         },
         {
-            title: "User",
-            path: "/user",
-            iconKey: "user",
+            title: "Manual Entry",
+            path: "/manual-entry",
+            iconKey: "notebook-pen",
         },
-    ],
-    setting: [
+        {
+            title: "History",
+            path: "/history",
+            iconKey: "history",
+        },
         {
             title: "Settings",
-            path: "/settings/profile",
+            path: "/settings",
             iconKey: "setting",
         },
     ],

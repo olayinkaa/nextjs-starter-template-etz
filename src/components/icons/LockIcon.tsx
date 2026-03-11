@@ -1,0 +1,4 @@
+import * as React from "react";
+import type { SVGProps } from "react";
+const SvgLockIcon = (props: SVGProps<SVGSVGElement>) => <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="none" viewBox="0 0 16 16" {...props}><g stroke="currentColor" clipPath="url(#lock-icon_svg__a)"><path strokeWidth={1.5} d="M1.334 10.667c0-1.886 0-2.828.585-3.414.586-.586 1.529-.586 3.415-.586h5.333c1.885 0 2.828 0 3.414.586s.586 1.528.586 3.414 0 2.828-.586 3.414-1.529.586-3.414.586H5.334c-1.886 0-2.829 0-3.415-.586s-.586-1.528-.586-3.414Z" /><path strokeLinecap="round" strokeWidth={1.5} d="M4 6.666V5.333a4 4 0 1 1 8 0v1.333" /><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5.334 10.667h.006m2.654 0H8m2.66 0h.007" /></g><defs><clipPath id="lock-icon_svg__a"><path fill="#fff" d="M0 0h16v16H0z" /></clipPath></defs></svg>;
+export default SvgLockIcon;

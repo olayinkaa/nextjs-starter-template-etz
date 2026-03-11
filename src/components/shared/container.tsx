@@ -10,7 +10,7 @@ export default function Container({
     return (
         <div
             data-slot="container"
-            className={cn("container mx-auto px-4", className)}
+            className={cn("container mx-auto mt-8", className)}
             {...props}
         >
             {children}

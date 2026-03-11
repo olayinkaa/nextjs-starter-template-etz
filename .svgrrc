@@ -1,0 +1,11 @@
+{
+    "icon": true,
+    "typescript": true,
+    "memo": false,
+    "outDir": "src/components/icons",
+    "replaceAttrValues": {
+        "#000": "currentColor",
+        "#000000": "currentColor"
+    },
+    "prettier": false
+}

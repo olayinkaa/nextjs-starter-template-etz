@@ -7,15 +7,20 @@ import {
     Folder,
     GalleryHorizontalEnd,
     Handbag,
+    History,
     Home,
     LayoutDashboard,
     ListFilter,
     LucideIcon,
+    NotebookPen,
     Package,
+    PlusCircle,
     Settings,
     Shield,
     ShoppingBag,
+    Upload,
     User,
+    
 } from "lucide-react";
 
 export const LucideIconsMap: Record<string, LucideIcon> = {
@@ -35,4 +40,8 @@ export const LucideIconsMap: Record<string, LucideIcon> = {
     shield: Shield,
     chevron_down: ChevronDown,
     list_filter: ListFilter,
+    upload: Upload,
+    "plus-circle": PlusCircle,
+    history: History,
+    "notebook-pen": NotebookPen
 } as const;

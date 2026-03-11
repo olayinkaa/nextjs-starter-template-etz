@@ -9,9 +9,7 @@ import {
     SidebarMenuItem,
     // SidebarRail,
 } from "@/components/ui/sidebar";
-import NavDasboard from "./nav-dashboard";
 import { NavItems } from "./nav-items";
-import NavSecondary from "./nav-secondary";
 import { NavUser } from "./nav-user";
 import NavMain from "./nav-main";
 
@@ -27,10 +25,8 @@ export default function AppSidebar({ ...props }: React.ComponentProps<typeof Sid
                     </SidebarMenuItem>
                 </SidebarMenu>
             </SidebarHeader>
-            <SidebarContent className="mt-4">
-                <NavDasboard items={NavItems.dashboard} />
+            <SidebarContent className="mt-5">
                 <NavMain items={NavItems.main} />
-                <NavSecondary items={NavItems.setting} />
             </SidebarContent>
             <SidebarFooter>
                 <NavUser />

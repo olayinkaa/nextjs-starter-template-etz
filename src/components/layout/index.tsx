@@ -11,7 +11,7 @@ export default function DashboardLayout({
         <SidebarProvider
             style={
                 {
-                    "--sidebar-width": "200px",
+                    "--sidebar-width": "10rem",
                 } as React.CSSProperties
             }
             defaultOpen={false}
@@ -19,7 +19,7 @@ export default function DashboardLayout({
             <AppSidebar collapsible="icon" variant="sidebar" />
             <SidebarInset className="overflow-y-auto">
                 <TopHeader />
-                <div className="bg-slate-50 flex flex-1 flex-col">{children}</div>
+                <div className="bg-background flex flex-1 flex-col">{children}</div>
             </SidebarInset>
         </SidebarProvider>
     );

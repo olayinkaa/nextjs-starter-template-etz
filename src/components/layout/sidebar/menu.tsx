@@ -15,9 +15,13 @@ export default function Menu({ item }: { item: MenuList }) {
     return (
         <SidebarMenuItem key={item.title}>
             <SidebarMenuButton
-                className="hover:bg-slate-300/30 h-10 rounded-none px-3"
+                className="h-10 rounded-none bg-transparent! hover:bg-slate-300/30"
                 asChild
                 size="sm"
+                tooltip={{
+                    children: item.title,
+                    hidden: false,
+                }}
             >
                 <Link
                     href={item.path}
@@ -27,14 +31,14 @@ export default function Menu({ item }: { item: MenuList }) {
                 >
                     {Icon && (
                         <Icon
-                            className={cn("text-slate size-4.5!", {
-                                "text-primary-400": isActiveMenu,
+                            className={cn("size-6", {
+                                "text-primary!": isActiveMenu,
                             })}
                         />
                     )}
                     <h4
                         className={cn({
-                            "text-primary-400! text-sm font-medium!": isActiveMenu,
+                            "text-primary text-sm font-medium!": isActiveMenu,
                         })}
                     >
                         {item.title}

@@ -1,0 +1,4 @@
+import * as React from "react";
+import type { SVGProps } from "react";
+const SvgQuestionIcon = (props: SVGProps<SVGSVGElement>) => <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="none" viewBox="0 0 40 40" {...props}><path fill="#0765FF" fillRule="evenodd" d="M20 40c-9.428 0-14.142 0-17.071-2.929S0 29.428 0 20 0 5.858 2.929 2.929 10.572 0 20 0s14.142 0 17.071 2.929S40 10.572 40 20s0 14.142-2.929 17.071S29.428 40 20 40m0-28.5a2.25 2.25 0 0 0-2.25 2.25 1.5 1.5 0 0 1-3 0 5.25 5.25 0 1 1 9.016 3.658q-.277.284-.529.534c-.431.43-.81.809-1.141 1.235-.438.563-.596.977-.596 1.323V22a1.5 1.5 0 0 1-3 0v-1.5c0-1.31.61-2.371 1.228-3.166.458-.587 1.033-1.161 1.5-1.627q.212-.21.386-.39A2.25 2.25 0 0 0 20 11.5M20 30a2 2 0 1 0 0-4 2 2 0 0 0 0 4" clipRule="evenodd" /></svg>;
+export default SvgQuestionIcon;

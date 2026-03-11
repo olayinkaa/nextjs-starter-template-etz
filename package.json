@@ -10,7 +10,8 @@
         "start": "next start",
         "lint": "eslint",
         "lint:fix": "eslint --fix",
-        "prepare": "husky"
+        "prepare": "husky",
+        "build:icons": "pnpm dlx @svgr/cli src/assets/images/svg"
     },
     "dependencies": {
         "@base-ui/react": "^1.2.0",
@@ -36,6 +37,7 @@
         "radix-ui": "^1.4.3",
         "react": "19.2.3",
         "react-dom": "19.2.3",
+        "react-dropzone": "^15.0.0",
         "react-hook-form": "^7.71.2",
         "react-idle-timer": "^5.7.2",
         "sonner": "^2.0.7",
@@ -46,6 +48,7 @@
     "devDependencies": {
         "@faker-js/faker": "^10.3.0",
         "@ianvs/prettier-plugin-sort-imports": "^4.7.1",
+        "@svgr/cli": "^8.1.0",
         "@tailwindcss/forms": "^0.5.11",
         "@tailwindcss/postcss": "^4",
         "@tanstack/eslint-plugin-query": "^5.91.4",

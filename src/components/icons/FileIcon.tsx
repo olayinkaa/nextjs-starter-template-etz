@@ -1,0 +1,4 @@
+import * as React from "react";
+import type { SVGProps } from "react";
+const SvgFileIcon = (props: SVGProps<SVGSVGElement>) => <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="none" viewBox="0 0 24 31" {...props}><path fill="#0765FF" d="M19.685 6.941a2.91 2.91 0 0 1-2.906-2.906V0H3.794A3.793 3.793 0 0 0 0 3.793v22.863a3.793 3.793 0 0 0 3.794 3.793h15.588a3.793 3.793 0 0 0 3.793-3.793V6.94z" opacity={0.3} /><path fill="#0765FF" d="M23.177 6.941h-3.49a2.91 2.91 0 0 1-2.906-2.906V0zM18.41 11.8H3.86a.527.527 0 0 1 0-1.055h14.55a.529.529 0 0 1 0 1.055M18.41 14.955H3.86a.527.527 0 0 1 0-1.056h14.55a.529.529 0 0 1 0 1.056M18.41 18.106H3.86a.529.529 0 0 1 0-1.055h14.55a.529.529 0 0 1 0 1.055M12.669 21.26H3.86a.527.527 0 1 1 0-1.056h8.809a.527.527 0 1 1 0 1.056" /></svg>;
+export default SvgFileIcon;

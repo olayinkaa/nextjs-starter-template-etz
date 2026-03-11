@@ -1,0 +1,4 @@
+import * as React from "react";
+import type { SVGProps } from "react";
+const SvgFailedIcon = (props: SVGProps<SVGSVGElement>) => <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="none" viewBox="0 0 40 40" {...props}><path fill="#B42318" fillRule="evenodd" d="M40 20c0 11.046-8.954 20-20 20S0 31.046 0 20 8.954 0 20 0s20 8.954 20 20m-26.06-6.06a1.5 1.5 0 0 1 2.12 0L20 17.878l3.94-3.94a1.5 1.5 0 0 1 2.12 2.122L22.122 20l3.94 3.94a1.5 1.5 0 1 1-2.122 2.12L20 22.122l-3.938 3.94a1.5 1.5 0 1 1-2.122-2.122L17.88 20l-3.94-3.94a1.5 1.5 0 0 1 0-2.12" clipRule="evenodd" /></svg>;
+export default SvgFailedIcon;
